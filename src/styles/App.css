@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+  background-color: #c0d0f1;
+  min-height: 100vh;
+  color: rgb(0, 0, 0);
+  font-size: calc(5px + 2vmin);
+  padding: 0 calc(5vw) 0 calc(5vw);
+  /*No highlighting!*/
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                      supported by Chrome, Edge, Opera and Firefox */
+}
+
+.App-logo {
+  height: calc(10px + 2vmin);
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  font-size: calc(10px + 2vmin);
+  margin-bottom: calc(1px + 2vmin);
+}
+
+.Form-Container {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.Theme-Toggle-Container {
+  position: fixed;
+  right: 2vw;
+}
+
+.Theme-Toggle[type="checkbox"] {
+  border: pink solid 0.5vmin; /* This doesn't actually work. Input checkbox can't seem to be customised with CSS - further reading required. */
+}
+
+.Image-Path-Input {
+  height: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
+  width: 60vw;
+  padding: calc(3px + 1vmin) calc(5px + 1vmin) calc(3px + 1vmin) calc(5px + 1vmin);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px  grey;
+}
+
+.Details-Form-Input {
+    display: inline-block;
+    height: calc(6px + 2vmin);
+    font-size: calc(6px + 1vmin);
+    width: 30vw;
+    padding: calc(3px + 1vmin) calc(5px + 1vmin) calc(3px + 1vmin) calc(5px + 1vmin);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px  grey;
+}
+
+.Locked-Input {
+  background-color: bisque;
+}
+
+button {
+  font-size: calc(5px + 2vmin);
+  margin: calc(2px + 1vmin);
+  padding: calc(3px + 1vmin) calc(5px + 1vmin) calc(3px + 1vmin) calc(5px + 1vmin);
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px  grey;
+  border: pink solid 0.5vmin;
+  background-color: rgb(248, 115, 137);
+  outline:none;
+}
+button:hover {
+  border: rgb(168, 127, 134) solid 0.5vmin;
+  background-color: rgb(151, 71, 84);
+}
+
+.Details-Form-Tab-Button {
+  font-size: calc(3px + 2vmin);
+  margin: calc(1px + 1vmin);
+  padding: 0.5vmin calc(2px + 1vmin) 0.5vmin calc(2px + 1vmin);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
